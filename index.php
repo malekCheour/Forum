@@ -6,8 +6,8 @@ $controller = isset($_REQUEST['controller']) ? safe($_REQUEST['controller']) : $
 $function = isset($_REQUEST['function']) ? safe($_REQUEST['function']) : $config['default_function'];
 
 
-// echo " le controlleur $controller<br>";
-// echo " la fonction $function";
+
+//mettre la premiere lettre du controlleur en majusucule avec ucfirst
 
 $controller_file = "controllers/".ucfirst($controller)."Controller.php";
 
