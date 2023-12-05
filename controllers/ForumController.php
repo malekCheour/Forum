@@ -1,5 +1,5 @@
 <?php
-
+  require_once('models/articlemodel.php');
 function index(){
     render('/forum/forum.php');
 }
@@ -23,8 +23,8 @@ function showForum() {
 
  
 function modifierArticle($request) {
-  require_once('models/articlemodel.php');
-  $article = getArticleById($request['id_forum']);
+
+  $article = getArticleById($request['id']);
   render('/forum/modifierArticle.php', $article);
 }
 
@@ -37,8 +37,8 @@ function editOrUpdateArticle($request){
   } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
       // Mettre à jour l'article dans la base de données
       updateArticleInDatabase($_POST);
-      echo 'article mis à jour';
-      // header('location:index.php?controller=forum&function=showForum');
+      // echo 'article mis à jour';
+      header('location:index.php?controller=forum&function=showForum');
       exit();
   }
 }

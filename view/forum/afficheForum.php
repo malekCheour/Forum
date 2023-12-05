@@ -13,13 +13,15 @@ if ($result && mysqli_num_rows($result) > 0) {
 
         ?>
 
-    <p> <strong>titre : </strong><?= $row['titre']; ?></p>
-    <p> <strong>article : </strong><?= $row['article']; ?></p>
-    <p> <strong>date : </strong><?= $row['date']; ?></p>
-    <p> <strong>Auteur : </strong><?= $row['nom']; ?></p>
+
+        <p> <strong>titre : </strong><?= $row['titre']; ?></p>
+        <p> <strong>article : </strong><?= $row['article']; ?></p>
+        <p> <strong>date : </strong><?= $row['date']; ?></p>
+        <p> <strong>Auteur : </strong><?= $row['nom']; ?></p>
+   
 
     <?php  
-    if($_SESSION['id_utilisateur'] == $row['utilisateur_id_utilisateur']){
+    if(isConnected() && (isset($_SESSION['id_utilisateur']) && isset($row['utilisateur_id_utilisateur']) && $_SESSION['id_utilisateur'] == $row['utilisateur_id_utilisateur'])){
 
         ?>
 
@@ -27,8 +29,6 @@ if ($result && mysqli_num_rows($result) > 0) {
      <a href="index.php?controller=forum&function=modifierArticle&id=<?= $row['id_forum']; ?>">Modifier</a>
     
   <?php
-
-    
     }
        
     }

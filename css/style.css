@@ -1,122 +1,122 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
 }
 
 nav {
-    background-color: #4CAF50; /* Green background */
-    padding: 15px;
+  background-color: #4caf50; /* Green background */
+  padding: 15px;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    text-align: center; /* Center the navigation items */
+  list-style: none;
+  margin: 0;
+  text-align: center; /* Center the navigation items */
 }
 
 nav li {
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    background-color: #333; /* Darker background on hover */
-    color: #4CAF50; /* Green text on hover */
+  background-color: #333; /* Darker background on hover */
+  color: #4caf50; /* Green text on hover */
 }
 
 .container {
-    padding: 20px;
+  padding: 20px;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
 }
 
 th {
-    background-color: #4CAF50;
-    color: #fff;
+  background-color: #4caf50;
+  color: #fff;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 form {
-    width: 300px;
-    margin: 0 auto;
+  width: 300px;
+  margin: 0 auto;
 }
 
 label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 input,
 select,
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #4CAF50;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
 }
 
 .btn,
 .btn-danger {
-    display: inline-block;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-h1{
-    text-align: center;
-    color: tomato;
+h1 {
+  text-align: center;
+  color: tomato;
 }
-
 
 .btn {
-    background-color: #4CAF50;
-    color: #fff;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .btn:hover {
-    background-color: #333;
-    transform: scale(1.05);
+  background-color: #333;
+  transform: scale(1.05);
 }
 
 .btn-danger {
-    background-color: #D32F2F;
-    color: #fff;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  background-color: #d32f2f;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .btn-danger:hover {
-    background-color: #B71C1C;
-    transform: scale(1.05);
+  background-color: #b71c1c;
+  transform: scale(1.05);
 }
 
 .text-danger {
-    color: #D32F2F;
+  color: #d32f2f;
 }

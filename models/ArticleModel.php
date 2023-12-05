@@ -76,7 +76,6 @@ function updateArticleInDatabase($data){
 
 
 
-?>
 
 
 

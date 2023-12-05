@@ -10,9 +10,11 @@
 <nav>
     <ul>
         <li><a href="index.php?controller=forum&function=showForum">forum</a></li>
-        <li><a href="index.php?controller=user&function=afficherLogin">Login</a></li>
+        <li><a href="index.php?controller=forum&function=index">ajouter article</a></li>
         <li><a href="index.php?controller=user&function=index">Ajouter utilisateur</a></li>
+        <li><a href="index.php?controller=user&function=afficherLogin">Login</a></li>
         <li><a href="index.php?controller=user&function=logout">Logout</a></li>
+
     </ul>
 </nav>
     <div class="container">
