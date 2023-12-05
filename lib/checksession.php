@@ -6,6 +6,7 @@ if(!isset($_SESSION['fingerPrint']) ||  $_SESSION['fingerPrint'] !== md5($_SERVE
     return false;
 }
 return true;
+
 }
 
 ?>
