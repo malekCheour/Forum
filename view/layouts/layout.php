@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="index.php?controller=client">Client</a></li>
-            <li><a href="index.php?controller=user&function=index">Ajouter utilisateur</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="index.php?controller=forum&function=showForum">forum</a></li>
+        <li><a href="index.php?controller=user&function=afficherLogin">Login</a></li>
+        <li><a href="index.php?controller=user&function=index">Ajouter utilisateur</a></li>
+        <li><a href="index.php?controller=user&function=logout">Logout</a></li>
+    </ul>
+</nav>
     <div class="container">
         <?php echo $content; ?>
     </div>

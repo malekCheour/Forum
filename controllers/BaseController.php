@@ -5,5 +5,12 @@ function index(){
 
     render('/base/base.php');
 }
+// baseController.php
+
+function showLogin(){
+    // Afficher la page de connexion
+    render('/user/login.php');
+}
+
 
 ?>
