@@ -17,4 +17,9 @@ require('lib/checksession.php');
         </label>
         <input type="hidden" name="utilisateur_id_utilisateur" value="<?= $_SESSION['id_utilisateur']; ?>">
         <input type="submit" value="Save">
+        <?php
+        if(!isConnected())
+            header('location:index.php?controller=user&function=afficherLogin')
+         
+        ?>
     </form>
